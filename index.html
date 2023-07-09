@@ -4,11 +4,62 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Awesome Books</title>
   <link href="./index.css" rel="stylesheet">
   <script src="./index.js" type="module"></script>
+  <!-- Fonts -->
 </head>
 <body>
-  
+  <header>
+    <nav>
+      <a href="#list">Awesome Books</a>
+      <ul>
+        <li><a href="#list">List</a></li>
+        <li><a href="#add-new">Add new</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <div id="current-time">
+      <p></p>
+    </div>
+  </header>
+
+  <main>
+    <section id="list">
+      <h1>All awesome books</h1>
+      <article>
+        <ul id="book-list">
+        </ul>
+      </article>
+    </section>
+
+    <section id="add-new">
+      <h2>Add a new book</h2>
+      <form>
+        <input type="text" id="title" placeholder="Title" required>
+        <span id="title-error"></span>
+        <input type="text" id="author" placeholder="Author" required>
+        <span id="author-error"></span>
+        <button type="button">Add</button>
+      </form>
+    </section>
+    
+    <section id="contact">
+      <h2>Contact information</h2>
+      <address>
+        Do have any questions or you just want to say "Hello"?<br>
+        You can reach out to us!<br>
+        <ul id="contact-information">
+          <li>Our e-mail: <a href = "mailto:zilolanazarova1994@gmail.com">zilolanazarova1994@gmail.com</a></li>
+          <li>Our phone number: <a href="tel:+998951505075">+998951505075</a></li>
+          <li>Our address: Farovon khayot 43, Tashkent, Uzbekistan</li>
+        </ul>
+      </address>
+    </section>
+  </main>
+
+  <footer>
+    <p>Copyright © Zilola Nazarova. No Rights Reserved.</p>
+  </footer>
 </body>
 </html>
