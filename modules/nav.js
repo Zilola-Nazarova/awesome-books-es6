@@ -1,3 +1,5 @@
+import { showSection } from "./showSection.js"
+
 const init = () => {
   const navLinks = document.querySelectorAll('nav a');
   navLinks.forEach((link) => {
@@ -9,6 +11,9 @@ const init = () => {
       });
 
       link.classList.add('active');
+
+      const sectionId = link.getAttribute('href').substring(1);
+      showSection(sectionId);
     });
   });
 }
