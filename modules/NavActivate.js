@@ -1,3 +1,4 @@
+// eslint-disable-next-line import/no-unresolved
 import showSection from './ShowSection.js';
 
 const navActivate = () => {
