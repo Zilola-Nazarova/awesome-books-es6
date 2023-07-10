@@ -20,14 +20,6 @@ a {
   color: inherit;
 }
 
-a:hover {
-  border-bottom: 1px solid #BFA181;
-}
-
-a.active {
-  border-bottom: 1px solid #BFA181;
-}
-
 header {
   margin-top: 0.5rem;
 }
@@ -37,7 +29,7 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  color: #BFA181;
+  color: #bfa181;
   font-weight: 700;
 }
 
@@ -48,7 +40,7 @@ nav ul {
   max-width: 300px;
 }
 
-nav ul li {
+nav li {
   text-align: center;
 }
 
@@ -59,7 +51,7 @@ footer {
   height: 3.5rem;
   display: flex;
   align-items: center;
-  color: #BFA181;
+  color: #bfa181;
   font-size: 0.8rem;
 }
 
@@ -84,7 +76,6 @@ section {
   align-items: center;
   padding: 2rem 2rem;
   color: #0fb6b0;
-
 }
 
 section.hidden {
@@ -109,10 +100,6 @@ button {
   border-bottom: none;
   border-top: none;
   cursor: pointer;
-}
-
-button:hover {
-  text-decoration: underline;
 }
 
 form {
@@ -158,8 +145,12 @@ address ul {
   margin-top: 1rem;
 }
 
+address li {
+  margin-bottom: 0.2rem;
+}
+
 address a {
-  text-decoration: underline;
+  font-style: italic;
 }
 
 #current-time {
@@ -168,7 +159,7 @@ address a {
   align-items: center;
   height: 2.5rem;
   font-size: 0.8rem;
-  color: #BFA181;
+  color: #bfa181;
 }
 
 #welcome,
@@ -178,9 +169,9 @@ address a {
   min-height: calc(100vh - 16rem);
 }
 
- article {
+article {
   min-width: 80%;
- }
+}
 
 #book-list li {
   min-height: 3rem;
@@ -194,4 +185,20 @@ hr {
   border: none;
   height: 1px;
   background-color: #0fb6b0;
+}
+
+a:hover {
+  border-bottom: 1px solid #bfa181;
+}
+
+address a:hover {
+  border-bottom: 1px solid #0fb6b0;
+}
+
+a.active {
+  border-bottom: 1px solid #bfa181;
+}
+
+button:hover {
+  text-decoration: underline;
 }
