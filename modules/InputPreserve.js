@@ -6,6 +6,8 @@ export const setToLocal = () => {
   currentInput.currentTitle = document.getElementById('title').value;
   currentInput.currentAuthor = document.getElementById('author').value;
   localStorage.setItem('currentInput', JSON.stringify(currentInput));
+  document.getElementById('title-error').textContent = '';
+  document.getElementById('author-error').textContent = '';
 };
 
 export const takeFromLocal = () => {
