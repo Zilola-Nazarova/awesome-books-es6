@@ -2,7 +2,7 @@ import showSection from './ShowSection.js';
 
 const navActivate = () => {
   const navLinks = document.querySelectorAll('nav a');
-  showSection('list');
+  showSection('welcome');
   navLinks.forEach((link) => {
     link.addEventListener('click', (event) => {
       event.preventDefault();
