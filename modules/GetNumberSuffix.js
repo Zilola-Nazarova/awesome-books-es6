@@ -16,4 +16,4 @@ const getNumberSuffix = (num) => {
   }
 };
 
-export { getNumberSuffix };
+export default getNumberSuffix;

@@ -1,6 +1,6 @@
-import { navActivate } from './modules/nav.js';
-import { updateDateTime } from './modules/DateTime.js';
-import { BookList } from './modules/BookList.js';
+import navActivate from './modules/NavActivate.js';
+import updateDateTime from './modules/DateTime.js';
+import BookList from './modules/BookList.js';
 import { takeFromLocal } from './modules/InputPreserve.js';
 
 navActivate();

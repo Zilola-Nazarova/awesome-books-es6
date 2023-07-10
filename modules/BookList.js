@@ -48,4 +48,4 @@ class BookList {
   }
 }
 
-export { BookList };
+export default BookList;

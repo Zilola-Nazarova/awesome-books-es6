@@ -1,5 +1,5 @@
 import { DateTime } from '../node_modules/luxon/build/es6/luxon.js';
-import { getNumberSuffix } from './GetNumberSuffix.js';
+import getNumberSuffix from './GetNumberSuffix.js';
 
 const updateDateTime = () => {
   const now = DateTime.now().setLocale('en');
@@ -13,4 +13,4 @@ const updateDateTime = () => {
 
 setInterval(updateDateTime, 1000);
 
-export { updateDateTime };
+export default updateDateTime;
