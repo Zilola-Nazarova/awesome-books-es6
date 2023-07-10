@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Awesome Books</title>
+  <link href="./index.css" rel="stylesheet">
+  <script src="./index.js" type="module"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="#welcome">Awesome Books</a>
+      <ul>
+        <li><a href="#list">List</a></li>
+        <li><a href="#add-new">Add new</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <div id="current-time">
+      <p></p>
+    </div>
+  </header>
+
+  <main>
+    <section id="welcome">
+      <h1>Welcome to 'Awesome books' app!</h1>
+      <p>Here you can store your collection of favourite books!</p>
+    </section>
+    <section id="list">
+      <h2>All awesome books</h2>
+      <article>
+        <ul id="book-list">
+        </ul>
+      </article>
+    </section>
+
+    <section id="add-new">
+      <h2>Add a new book</h2>
+      <form>
+        <input type="text" id="title" placeholder="Title" required>
+        <span id="title-error"></span>
+        <input type="text" id="author" placeholder="Author" required>
+        <span id="author-error"></span>
+        <button type="button">Add</button>
+      </form>
+    </section>
+    
+    <section id="contact">
+      <h2>Contact information</h2>
+      <address>
+        Do have any questions or you just want to say "Hello"?<br>
+        You can reach out to us!<br>
+        <ul id="contact-information">
+          <li>Our e-mail: <a href = "mailto:zilolanazarova1994@gmail.com">zilolanazarova1994@gmail.com</a></li>
+          <li>Our phone number: <a href="tel:+998951505075">+998951505075</a></li>
+          <li>Our address: Farovon khayot 43, Tashkent, Uzbekistan</li>
+        </ul>
+      </address>
+    </section>
+  </main>
+
+  <footer>
+    <p>Copyright 2023 <span>©</span> Zilola Nazarova. No Rights Reserved.</p>
+  </footer>
+</body>
+</html>
