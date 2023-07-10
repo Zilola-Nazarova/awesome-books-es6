@@ -21,7 +21,12 @@ class BookList {
   };
 
   addBook(book) {
-    this.books.push(book);
+    this.books.unshift(book);
+    localStorage.setItem('books', JSON.stringify(this.books));
+  }
+
+  removeBook(index) {
+    this.books.splice(index, 1);
     localStorage.setItem('books', JSON.stringify(this.books));
   }
 
@@ -34,6 +39,10 @@ class BookList {
       li.textContent = `"${book.title}" by ${book.author}`;
       const removeBtn = document.createElement('button');
       removeBtn.textContent = 'Remove';
+      removeBtn.addEventListener('click', () => {
+        this.removeBook(index);
+        this.compileBookList();
+      });
       li.appendChild(removeBtn);
       bookList.appendChild(li);
     });
