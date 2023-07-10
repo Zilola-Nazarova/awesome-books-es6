@@ -1,6 +1,6 @@
 import { showSection } from "./showSection.js"
 
-const init = () => {
+const navActivate = () => {
   const navLinks = document.querySelectorAll('nav a');
   navLinks.forEach((link) => {
     link.addEventListener('click', (event) => {
@@ -18,4 +18,4 @@ const init = () => {
   });
 }
 
-export { init };
+export { navActivate };

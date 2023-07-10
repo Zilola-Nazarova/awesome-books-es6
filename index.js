@@ -1,9 +1,12 @@
-import { init } from "./modules/nav.js";
+import { navActivate } from "./modules/nav.js";
 import { updateDateTime } from "./modules/DateTime.js";
-// import { addBtn } from './modules/AddBtn.js'
-import { BookList } from './modules/BookList.js'
-init();
+import { windowLoad } from './modules/WindowLoad.js';
+import { BookList } from './modules/BookList.js';
+navActivate();
 updateDateTime();
+window.addEventListener('load', () => {
+  bookList.compileBookList();
+});
 const bookList = new BookList();
 bookList.addBtn();
-console.log(bookList);
+

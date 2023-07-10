@@ -23,12 +23,12 @@ class BookList {
   addBook(book) {
     this.books.unshift(book);
     localStorage.setItem('books', JSON.stringify(this.books));
-  }
+  };
 
   removeBook(index) {
     this.books.splice(index, 1);
     localStorage.setItem('books', JSON.stringify(this.books));
-  }
+  };
 
   compileBookList() {
     const bookList = document.getElementById('book-list');
