@@ -1,6 +1,197 @@
-section {
-  display: block;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
+
+body {
+  position: relative;
+  min-height: 100vh;
+  background-color: #0a1828;
+  font-family: 'Space Mono', monospace;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover {
+  border-bottom: 1px solid #BFA181;
+}
+
+a.active {
+  border-bottom: 1px solid #BFA181;
+}
+
+header {
+  margin-top: 0.5rem;
+}
+
+nav {
+  min-height: 3.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #BFA181;
+  font-weight: 700;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+  max-width: 300px;
+}
+
+nav ul li {
+  text-align: center;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 3.5rem;
+  display: flex;
+  align-items: center;
+  color: #BFA181;
+  font-size: 0.8rem;
+}
+
+footer span {
+  font-family: sans-serif;
+}
+
+main {
+  padding-bottom: 5rem;
+  clear: right;
+}
+
+nav,
+footer,
+#current-time {
+  padding: 0.5rem 2rem;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem 2rem;
+  color: #0fb6b0;
+
+}
+
 section.hidden {
   display: none;
+}
+
+h1 {
+  margin-bottom: 2rem;
+}
+
+h2 {
+  margin-bottom: 2rem;
+}
+
+button {
+  margin: 0;
+  padding: 0.3rem 0.8rem;
+  width: auto;
+  color: inherit;
+  background-color: transparent;
+  border: 1px solid #0fb6b0;
+  border-bottom: none;
+  border-top: none;
+  cursor: pointer;
+}
+
+button:hover {
+  text-decoration: underline;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  max-width: 300px;
+}
+
+form input {
+  height: 2rem;
+  font-size: 1rem;
+  padding-left: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+form input::placeholder {
+  font-size: 0.8rem;
+}
+
+form span {
+  display: block;
+  font-size: 0.7rem;
+  line-height: 1em;
+  height: 1.5em;
+  margin-bottom: 0.5rem;
+  align-self: flex-start;
+}
+
+form button {
+  width: fit-content;
+  align-self: flex-end;
+  padding: 0.5rem 2rem;
+  margin-top: 0.5rem;
+}
+
+address {
+  font-style: normal;
+  font-size: 1.2rem;
+}
+
+address ul {
+  margin-top: 1rem;
+}
+
+address a {
+  text-decoration: underline;
+}
+
+#current-time {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 2.5rem;
+  font-size: 0.8rem;
+  color: #BFA181;
+}
+
+#welcome,
+#add-new {
+  justify-content: center;
+  text-align: center;
+  min-height: calc(100vh - 16rem);
+}
+
+ article {
+  min-width: 80%;
+ }
+
+#book-list li {
+  min-height: 3rem;
+  padding: 2rem 0 0.5rem 0;
+  display: flex;
+  justify-content: space-between;
+  font-style: italic;
+}
+
+hr {
+  border: none;
+  height: 1px;
+  background-color: #0fb6b0;
 }
