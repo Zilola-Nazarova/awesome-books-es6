@@ -1,8 +1,8 @@
 class BookList {
   constructor() {
-    this.books = JSON.parse(localStorage.getItem('books')) || []; 
-  };
-  
+    this.books = JSON.parse(localStorage.getItem('books')) || [];
+  }
+
   addBtn() {
     const addButton = document.querySelector('form button');
     addButton.addEventListener('click', (event) => {
@@ -11,24 +11,23 @@ class BookList {
       const author = document.getElementById('author').value;
       if (title && author !== '') {
         const book = { title, author };
-        console.log("I'm adding a book", book);
         this.addBook(book);
         this.compileBookList();
         document.getElementById('title').value = '';
         document.getElementById('author').value = '';
-      } 
+      }
     });
-  };
+  }
 
   addBook(book) {
     this.books.unshift(book);
     localStorage.setItem('books', JSON.stringify(this.books));
-  };
+  }
 
   removeBook(index) {
     this.books.splice(index, 1);
     localStorage.setItem('books', JSON.stringify(this.books));
-  };
+  }
 
   compileBookList() {
     const bookList = document.getElementById('book-list');
@@ -46,7 +45,7 @@ class BookList {
       li.appendChild(removeBtn);
       bookList.appendChild(li);
     });
-  };
-};
+  }
+}
 
 export { BookList };

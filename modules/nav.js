@@ -1,4 +1,4 @@
-import { showSection } from "./showSection.js"
+import { showSection } from './showSection.js';
 
 const navActivate = () => {
   const navLinks = document.querySelectorAll('nav a');
@@ -16,6 +16,6 @@ const navActivate = () => {
       showSection(sectionId);
     });
   });
-}
+};
 
 export { navActivate };
